@@ -1,0 +1,269 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+ margin: 0;
+ font-family: "Inter", sans-serif;
+ color: #292929;
+ font-size: 16px;
+ line-height: 140%;
+}
+/* #region */
+.section
+{
+ /* height: 800px;*/
+}
+/* #endregion */
+
+/* #region header */
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  height: 100vb;
+  padding: 64px 120px;
+  background-image: url(imeges/header-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__title{
+margin-top: 40px;
+margin-bottom: 0px;
+font-size: 48px;
+line-height: 100%;
+font-style: italic;
+font-weight: 800;
+letter-spacing: -1.5px;
+
+}
+/* #endregion */
+/* #region menu */
+
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+transform: translateX(-100%);
+transition: 500ms;
+
+background: #E8EFF9;
+display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  height: 100vb;
+  padding: 64px 120px;
+  background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+} 
+
+.menu:target{
+  transform: translateX(-0%);
+  
+}
+
+
+.menu__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 64px;
+}
+/* #endregion */
+/* #region nav */
+.nav{
+  display: flex;
+flex-direction: column;
+gap: 32px;
+}
+.nav__link{
+color: #292929;
+text-decoration: none;
+font-weight: bold;
+font-size: 22px;
+line-height: 22px;
+text-transform: uppercase;
+letter-spacing: 2px;
+
+}
+/* #endregion */
+
+.main{
+  padding: 120px;
+  background-color: white;
+}
+
+.recommended{
+  margin-bottom: 120px;
+}
+
+.recommended__title{
+  margin-top: 0;
+  margin-bottom: 64px;
+font-size: 48px;
+line-height: 100%;
+font-weight: bold;
+text-align: center;
+letter-spacing: -1.5px;
+
+}
+
+
+.recommended__products{
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.product{
+  flex-basis: 325px;
+}
+
+.product__photo{
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.product__title{
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.product__category{
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.product__price{
+  margin: 0;
+  font-weight: bold;
+}
+
+.categories{
+  margin: 0 auto;
+  max-width: 1020px;
+  margin-bottom: 120px;
+}
+.categories__title{
+margin-top: 0;
+margin-bottom: 64px;
+font-size: 48px;
+line-height: 100%;
+font-weight: bold;
+text-align: center;
+letter-spacing: -1.5px;
+}
+.category{
+  margin-bottom: 64px;
+}
+.category__photos{
+  margin-bottom: 16px;
+  display: flex;
+  gap: 3%;
+}
+
+.category__title{
+  margin: 0;
+
+}
+
+.photo-wide{
+  width: 65%;
+}
+
+.photo-square{
+width: 32%;
+}
+
+.how-to-buy{
+  display: flex;
+  gap: 24px;
+  margin: 0 auto;
+  max-width: 1020px;
+}
+
+.how-to-buy__title{
+  flex-basis: 50%;
+  margin-top: 0;
+  margin-bottom: 64px;
+  font-size: 48px;
+  line-height: 100%;
+  font-weight: bold;
+  letter-spacing: -1.5px;
+}
+
+.how-to-buy__content{
+  flex-basis: 50%;
+}
+.how-to-buy__benefits{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+
+/* форма */
+.price {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.price-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price-input {
+  font-size: 15px;
+  width: 100%;
+  max-width: 400px;
+  margin: 10px 0;
+  padding: 10px;
+  border: 2px solid #b4cbe2;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.button{
+  color: #292929;
+  font-size: 15px;
+  background-color: #b4cbe2;
+  margin: 10px 0;
+  padding: 10px 50px;
+  align-items: center;
+  border-radius: 10px;
+  border: 2px solid #b4cbe2;
+}
+
+.footer{
+  position: sticky;
+  bottom: 0;
+  z-index: -1;
+  height: 460px;
+  background-image: url(imeges/footer-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
